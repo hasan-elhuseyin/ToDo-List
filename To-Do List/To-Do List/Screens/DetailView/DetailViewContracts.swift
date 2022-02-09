@@ -24,7 +24,7 @@ protocol DetailViewRouterProtocol {
 }
 
 enum DetailViewInteractorOutput {
-    //func showTasksList([Task])
+    case showTasksList([Task])
 }
 
 protocol DetailViewPresenterProtocol {
