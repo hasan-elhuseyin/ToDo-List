@@ -24,7 +24,7 @@ protocol MainViewRouterProtocol {
 }
 
 enum MainViewInteractorOutput {
-    //func showTasksList([Task])
+    case showTasksList([Task])
 }
 
 protocol MainViewPresenterProtocol {
