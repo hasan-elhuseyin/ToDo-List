@@ -84,12 +84,13 @@
 			children = (
 				9FAC21E027B453150092F4BE /* Screens */,
 				9FAC21DE27B44F7E0092F4BE /* Extensions */,
+				9FB422F527B46E6A005B4747 /* Managers */,
+				9FB422F627B46E79005B4747 /* Database */,
 				9FAC21C527B44A150092F4BE /* AppDelegate.swift */,
 				9FAC21C727B44A150092F4BE /* SceneDelegate.swift */,
 				9FAC21D127B44A170092F4BE /* Assets.xcassets */,
 				9FAC21D327B44A170092F4BE /* LaunchScreen.storyboard */,
 				9FAC21D627B44A170092F4BE /* Info.plist */,
-				9FAC21CE27B44A150092F4BE /* To_Do_List.xcdatamodeld */,
 			);
 			path = "To-Do List";
 			sourceTree = "<group>";
@@ -136,6 +137,21 @@
 				9FAC21DD27B44DF80092F4BE /* DetailView */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		9FB422F527B46E6A005B4747 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9FB422F627B46E79005B4747 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				9FAC21CE27B44A150092F4BE /* To_Do_List.xcdatamodeld */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
