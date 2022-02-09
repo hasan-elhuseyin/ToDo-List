@@ -26,6 +26,7 @@
 		9FB422EF27B46C77005B4747 /* DetailViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB422EE27B46C77005B4747 /* DetailViewInteractor.swift */; };
 		9FB422F127B46C89005B4747 /* DetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB422F027B46C89005B4747 /* DetailViewPresenter.swift */; };
 		9FB422F327B46C94005B4747 /* DetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB422F227B46C94005B4747 /* DetailViewRouter.swift */; };
+		9FB422F827B4758A005B4747 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB422F727B4758A005B4747 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		9FB422EE27B46C77005B4747 /* DetailViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewInteractor.swift; sourceTree = "<group>"; };
 		9FB422F027B46C89005B4747 /* DetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewPresenter.swift; sourceTree = "<group>"; };
 		9FB422F227B46C94005B4747 /* DetailViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewRouter.swift; sourceTree = "<group>"; };
+		9FB422F727B4758A005B4747 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		9FB422F527B46E6A005B4747 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				9FB422F727B4758A005B4747 /* CoreDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				9FAC21E627B455FE0092F4BE /* MainViewInteractor.swift in Sources */,
 				9FB422E827B46C3B005B4747 /* DetailViewController.swift in Sources */,
 				9FAC21EC27B459830092F4BE /* MainViewContracts.swift in Sources */,
+				9FB422F827B4758A005B4747 /* CoreDataManager.swift in Sources */,
 				9FAC21E427B454AE0092F4BE /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
