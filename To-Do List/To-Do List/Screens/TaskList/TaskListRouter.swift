@@ -1,5 +1,5 @@
 //
-//  MainViewRouter.swift
+//  TaskListRouter.swift
 //  To-Do List
 //
 //  Created by Hasan Elhussein on 9.02.2022.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-class MainViewRouter: TasksListRouterProtocol {
+class TaskListRouter: TasksListRouterProtocol {
         
-    weak var viewController: MainViewController?
+    weak var viewController: TaskListViewController?
     var dataStore: TasksListDataStoreProtocol?
     
     func navigate(to route: TasksListRoute) {
@@ -22,7 +22,7 @@ class MainViewRouter: TasksListRouterProtocol {
             if let tasks = dataStore?.tasks {
                 let task = tasks[index]
 
-                let destinationViewController = MainViewBuilder.build()
+                let destinationViewController = TaskListBuilder.build()
                 var destinationDataStore = destinationViewController.router?.dataStore
 
                 destinationDataStore?.tasks = [task]

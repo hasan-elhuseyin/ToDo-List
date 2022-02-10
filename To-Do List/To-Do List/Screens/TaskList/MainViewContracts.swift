@@ -1,5 +1,5 @@
 //
-//  MainViewContracts.swift
+//  TaskListContracts.swift
 //  To-Do List
 //
 //  Created by Hasan Elhussein on 9.02.2022.
@@ -8,11 +8,11 @@
 import Foundation
 
 // MARK: - Enums
-enum MainViewPresenterOutput {
+enum TaskListPresenterOutput {
     //func showTasksList([TasksPresentation])
 }
 
-enum MainViewInteractorOutput {
+enum TaskListInteractorOutput {
     case showTasksList([Task])
 }
 
@@ -22,23 +22,23 @@ enum TasksListRoute {
 }
 
 // MARK: - Protocols
-protocol MainViewProtocol: NSObject {
-    func handleOutput(_ output: MainViewPresenterOutput)
+protocol TaskListProtocol: NSObject {
+    func handleOutput(_ output: TaskListPresenterOutput)
 }
 
-protocol MainViewInteractorProtocol {
+protocol TaskListInteractorProtocol {
     func viewDidLoad()
 }
 
-protocol MainViewRoutingProtocol {
+protocol TaskListRoutingProtocol {
     func navigate(to route: TasksListRoute)
 }
 
-protocol MainViewPresenterProtocol {
-    func handleOutput(_ output: MainViewInteractorOutput)
+protocol TaskListPresenterProtocol {
+    func handleOutput(_ output: TaskListInteractorOutput)
 }
 
-typealias TasksListRouterProtocol = MainViewRoutingProtocol & TaskListDataPassingProtocol
+typealias TasksListRouterProtocol = TaskListRoutingProtocol & TaskListDataPassingProtocol
 
 protocol TasksListDataStoreProtocol {
     var tasks: [Task] { get set }

@@ -1,5 +1,5 @@
 //
-//  MainViewBuilder.swift
+//  TaskListBuilder.swift
 //  To-Do List
 //
 //  Created by Hasan Elhussein on 9.02.2022.
@@ -7,13 +7,13 @@
 
 import Foundation
 
-class MainViewBuilder {
+class TaskListBuilder {
     
-    static func build() -> MainViewController {
-        let viewController = MainViewController(nibName: "MainViewController", bundle: nil)
-        let interactor = MainViewInteractor()
-        let presenter = MainViewPresenter()
-        let router = MainViewRouter()
+    static func build() -> TaskListViewController {
+        let viewController = TaskListViewController(nibName: "TaskListViewController", bundle: nil)
+        let interactor = TaskListInteractor()
+        let presenter = TaskListPresenter()
+        let router = TaskListRouter()
         
         viewController.interactor = interactor
         viewController.router = router

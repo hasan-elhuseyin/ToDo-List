@@ -1,5 +1,5 @@
 //
-//  MainViewInteractor.swift
+//  TaskListInteractor.swift
 //  To-Do List
 //
 //  Created by Hasan Elhussein on 9.02.2022.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-class MainViewInteractor: MainViewInteractorProtocol, TasksListDataStoreProtocol {
+class TaskListInteractor: TaskListInteractorProtocol, TasksListDataStoreProtocol {
     
-    var presenter: MainViewPresenterProtocol?
+    var presenter: TaskListPresenterProtocol?
     var tasks: [Task] = []
     
     func viewDidLoad() {

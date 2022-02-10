@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  TaskListController.swift
 //  To-Do List
 //
 //  Created by Hasan Elhussein on 9.02.2022.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class TaskListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
     
     // Variables
-    var interactor: MainViewInteractorProtocol?
+    var interactor: TaskListInteractorProtocol?
     var router: TasksListRouterProtocol?
 
     override func viewDidLoad() {
@@ -34,14 +34,14 @@ class MainViewController: UIViewController {
 }
 
 // MARK: - Extensions
-// MainViewProtocol extension
-extension MainViewController: MainViewProtocol {
-    func handleOutput(_ output: MainViewPresenterOutput) {
+// TaskListProtocol extension
+extension TaskListViewController: TaskListProtocol {
+    func handleOutput(_ output: TaskListPresenterOutput) {
         
     }
 }
 
-extension MainViewController: UITableViewDelegate {
+extension TaskListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         router?.navigate(to: .showDetailView(index: indexPath.row))
@@ -49,7 +49,7 @@ extension MainViewController: UITableViewDelegate {
     
 }
 
-extension MainViewController: UITableViewDataSource {
+extension TaskListViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
