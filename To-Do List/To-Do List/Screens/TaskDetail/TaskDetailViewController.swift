@@ -7,10 +7,10 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class TaskDetailViewController: UIViewController {
     // Variables
-    var interactor: DetailViewInteractorProtocol?
-    var router: DetailViewRouterProtocol?
+    var interactor: TaskDetailInteractorProtocol?
+    var router: TaskDetailRouterProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +22,8 @@ class DetailViewController: UIViewController {
 }
 
 // MARK: - Extensions
-extension DetailViewController: DetailViewProtocol {
-    func handleOutput(_ output: DetailViewPresenterOutput) {
+extension TaskDetailViewController: TaskDetailViewControllerProtocol {
+    func handleOutput(_ output: TaskDetailPresenterOutput) {
         
     }
     

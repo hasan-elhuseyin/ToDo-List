@@ -15,7 +15,7 @@ class TaskListRouter: TasksListRouterProtocol {
     func navigate(to route: TasksListRoute) {
         switch route {
         case .showDetailViewDirectly:
-            let destinationVC = DetailViewBuilder.build()
+            let destinationVC = TaskDetailBuilder.build()
             print("now you should be redirected")
             viewController?.show(destinationVC, sender: nil)
         case .showDetailView(let index):
