@@ -14,7 +14,7 @@ class MainViewController: UIViewController {
     
     // Variables
     var interactor: MainViewInteractorProtocol?
-    var router: MainViewRouterProtocol?
+    var router: TasksListRouterProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class MainViewController: UIViewController {
     
     
     @IBAction func addTaskButtonTapped(_ sender: Any) {
-        
+        router?.navigate(to: .showDetailViewDirectly)
     }
     
 }
@@ -41,6 +41,10 @@ extension MainViewController: MainViewProtocol {
 }
 
 extension MainViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        router?.navigate(to: .showDetailView(index: indexPath.row))
+    }
     
 }
 

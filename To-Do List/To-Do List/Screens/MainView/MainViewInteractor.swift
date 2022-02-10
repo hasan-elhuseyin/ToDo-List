@@ -7,18 +7,17 @@
 
 import Foundation
 
-class MainViewInteractor {
+class MainViewInteractor: MainViewInteractorProtocol, TasksListDataStoreProtocol {
     
     var presenter: MainViewPresenterProtocol?
+    var tasks: [Task] = []
     
-}
-
-
-// MARK: - Extensions 
-extension MainViewInteractor: MainViewInteractorProtocol {
     func viewDidLoad() {
         // getTasksList()
     }
     
+//    func getTasksList() {
+//
+//    }
     
 }
