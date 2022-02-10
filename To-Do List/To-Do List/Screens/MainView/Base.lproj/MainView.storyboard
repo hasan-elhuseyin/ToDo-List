@@ -47,6 +47,9 @@
                                         <state key="normal" image="addGoal">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addTaskButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXr-NI-HNP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MC9-cO-Lbn">
                                         <rect key="frame" x="16" y="51.5" width="38" height="32"/>
@@ -84,6 +87,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6Mu-zx-qi3">
                                 <rect key="frame" x="0.0" y="151" width="414" height="711"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="kqJ-jj-m0L"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gy2-bO-QiQ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -108,6 +115,9 @@
                             <constraint firstItem="QMa-Dc-gpb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zot-cW-ET5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="6Mu-zx-qi3" id="b0k-30-SVq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
