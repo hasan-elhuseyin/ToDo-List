@@ -50,7 +50,7 @@
                             <constraint firstItem="gQO-Mi-A39" firstAttribute="centerY" secondItem="laj-eR-Gip" secondAttribute="centerY" id="H10-Nc-Sy7"/>
                             <constraint firstItem="WCv-EC-iwh" firstAttribute="leading" secondItem="laj-eR-Gip" secondAttribute="leading" constant="20" symbolic="YES" id="dyp-rJ-MUd"/>
                             <constraint firstAttribute="trailing" secondItem="gQO-Mi-A39" secondAttribute="trailing" constant="20" symbolic="YES" id="pk7-FC-kp2"/>
-                            <constraint firstAttribute="height" constant="90" id="qvr-wg-fq4"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="qvr-wg-fq4"/>
                             <constraint firstItem="gQO-Mi-A39" firstAttribute="leading" secondItem="WCv-EC-iwh" secondAttribute="trailing" constant="10" id="upp-Q3-DMb"/>
                         </constraints>
                     </view>
