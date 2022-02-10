@@ -7,10 +7,10 @@
 
 import Foundation
 
-class TaskListRouter: TasksListRouterProtocol {
+class TaskListRouter: TaskListRouterProtocol {
         
     weak var viewController: TaskListViewController?
-    var dataStore: TasksListDataStoreProtocol?
+    var dataStore: TaskListDataStoreProtocol?
     
     func navigate(to route: TasksListRoute) {
         switch route {

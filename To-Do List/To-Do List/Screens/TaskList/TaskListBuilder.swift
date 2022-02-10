@@ -8,7 +8,6 @@
 import Foundation
 
 class TaskListBuilder {
-    
     static func build() -> TaskListViewController {
         let viewController = TaskListViewController(nibName: "TaskListViewController", bundle: nil)
         let interactor = TaskListInteractor()
@@ -23,5 +22,4 @@ class TaskListBuilder {
         router.dataStore = interactor
         return viewController
     }
-    
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TaskListInteractor: TaskListInteractorProtocol, TasksListDataStoreProtocol {
+class TaskListInteractor: TaskListInteractorProtocol, TaskListDataStoreProtocol {
     
     var presenter: TaskListPresenterProtocol?
     var tasks: [Task] = []

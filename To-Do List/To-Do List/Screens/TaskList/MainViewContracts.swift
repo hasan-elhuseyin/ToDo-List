@@ -30,20 +30,20 @@ protocol TaskListInteractorProtocol {
     func viewDidLoad()
 }
 
-protocol TaskListRoutingProtocol {
-    func navigate(to route: TasksListRoute)
-}
-
 protocol TaskListPresenterProtocol {
     func handleOutput(_ output: TaskListInteractorOutput)
 }
 
-typealias TasksListRouterProtocol = TaskListRoutingProtocol & TaskListDataPassingProtocol
+typealias TaskListRouterProtocol = TaskListRoutingProtocol & TaskListDataPassingProtocol
 
-protocol TasksListDataStoreProtocol {
-    var tasks: [Task] { get set }
+protocol TaskListRoutingProtocol {
+    func navigate(to route: TasksListRoute)
 }
 
 protocol TaskListDataPassingProtocol {
-    var dataStore: TasksListDataStoreProtocol? { get }
+    var dataStore: TaskListDataStoreProtocol? { get }
+}
+
+protocol TaskListDataStoreProtocol {
+    var tasks: [Task] { get set }
 }

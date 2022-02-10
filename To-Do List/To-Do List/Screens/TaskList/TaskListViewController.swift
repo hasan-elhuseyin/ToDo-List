@@ -14,7 +14,7 @@ class TaskListViewController: UIViewController {
     
     // Variables
     var interactor: TaskListInteractorProtocol?
-    var router: TasksListRouterProtocol?
+    var router: TaskListRouterProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,6 @@ class TaskListViewController: UIViewController {
     
     @IBAction func addTaskButtonTapped(_ sender: Any) {
         router?.navigate(to: .showDetailViewDirectly)
-        
     }
     
 }
