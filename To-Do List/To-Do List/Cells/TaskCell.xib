@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="90" id="KGk-i7-Jjw" customClass="TaskCell" customModule="To_Do_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laj-eR-Gip">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="WCv-EC-iwh">
+                                <rect key="frame" x="20" y="20" width="256" height="50.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task title here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="b0z-49-NGz">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task detail will go here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9w-m8-VHj" userLabel="Task Detail">
+                                        <rect key="frame" x="0.0" y="31" width="145" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/02/2022" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="gQO-Mi-A39" userLabel="Task Completion Date">
+                                <rect key="frame" x="286" y="32.5" width="108" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WCv-EC-iwh" firstAttribute="centerY" secondItem="laj-eR-Gip" secondAttribute="centerY" id="B5F-ql-m5L"/>
+                            <constraint firstItem="gQO-Mi-A39" firstAttribute="centerY" secondItem="laj-eR-Gip" secondAttribute="centerY" id="H10-Nc-Sy7"/>
+                            <constraint firstItem="WCv-EC-iwh" firstAttribute="leading" secondItem="laj-eR-Gip" secondAttribute="leading" constant="20" symbolic="YES" id="dyp-rJ-MUd"/>
+                            <constraint firstAttribute="trailing" secondItem="gQO-Mi-A39" secondAttribute="trailing" constant="20" symbolic="YES" id="pk7-FC-kp2"/>
+                            <constraint firstAttribute="height" constant="90" id="qvr-wg-fq4"/>
+                            <constraint firstItem="gQO-Mi-A39" firstAttribute="leading" secondItem="WCv-EC-iwh" secondAttribute="trailing" constant="10" id="upp-Q3-DMb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="laj-eR-Gip" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Glw-50-N2Z"/>
+                    <constraint firstItem="laj-eR-Gip" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cu7-lM-ifp"/>
+                    <constraint firstAttribute="bottom" secondItem="laj-eR-Gip" secondAttribute="bottom" id="dZz-5F-R11"/>
+                    <constraint firstAttribute="trailing" secondItem="laj-eR-Gip" secondAttribute="trailing" id="krH-Ov-9j5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="completionDate" destination="gQO-Mi-A39" id="CZc-YE-O2a"/>
+                <outlet property="detailLabel" destination="w9w-m8-VHj" id="K9y-IT-ipi"/>
+                <outlet property="titleLabel" destination="b0z-49-NGz" id="uZQ-IU-IRj"/>
+            </connections>
+            <point key="canvasLocation" x="200.00000000000003" y="75.669642857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
