@@ -28,6 +28,7 @@ class MainViewController: UIViewController {
     
     @IBAction func addTaskButtonTapped(_ sender: Any) {
         router?.navigate(to: .showDetailViewDirectly)
+        
     }
     
 }
