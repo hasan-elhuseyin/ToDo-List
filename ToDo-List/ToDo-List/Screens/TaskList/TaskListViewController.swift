@@ -48,6 +48,13 @@ extension TaskListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         router?.navigate(to: .showEditTaskDetail(index: indexPath.row))
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            interactor?.didDeleteRow(task: tasks[indexPath.row])
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
 }
 
 extension TaskListViewController: UITableViewDataSource {

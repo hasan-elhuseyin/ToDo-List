@@ -12,6 +12,7 @@ import CoreData
 protocol CoreDataManagerProtocol {
     func fetchData() -> [Task]
     func saveData(title: String, detail: String, creationDate: Date, completionDate: Date)
+    func deleteData(task: Task)
 }
 
 
@@ -67,6 +68,17 @@ extension CoreDataManager: CoreDataManagerProtocol {
             }
         } catch  {
             debugPrint("Error while saving data: \(error.localizedDescription)")
+        }
+    }
+    
+    func deleteData(task : Task) {
+        let manageContext = persistentContainer.viewContext
+        manageContext.delete(task)
+        do {
+            try  manageContext.save()
+            print("Task deleted")
+        } catch  {
+            debugPrint("Task deletion error: \(error.localizedDescription)")
         }
     }
     

@@ -15,7 +15,14 @@ class TaskListInteractor: TaskListInteractorProtocol, TaskListDataStoreProtocol 
     func viewDidLoad() {
         getTasks()
     }
-
+    
+    func didDeleteRow(task: Task) {
+        coreDataManager.deleteData(task: task)
+        tasks = coreDataManager.fetchData()
+        self.presenter?.handeOutput(.showTaskList(tasks))
+    }
+    
+    
     func getTasks() {
         tasks = coreDataManager.fetchData()
         self.presenter?.handeOutput(.showTaskList(tasks))
