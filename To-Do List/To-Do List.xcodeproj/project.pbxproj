@@ -69,6 +69,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F1CAD7B27B68BDC008CFB3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FAC21C527B44A150092F4BE /* AppDelegate.swift */,
+				9FAC21C727B44A150092F4BE /* SceneDelegate.swift */,
+				9FAC21D127B44A170092F4BE /* Assets.xcassets */,
+				9FAC21D327B44A170092F4BE /* LaunchScreen.storyboard */,
+				9FAC21D627B44A170092F4BE /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		9FAC21B927B44A150092F4BE = {
 			isa = PBXGroup;
 			children = (
@@ -93,11 +105,7 @@
 				9FAC21DE27B44F7E0092F4BE /* Extensions */,
 				9FB422F527B46E6A005B4747 /* Managers */,
 				9FB422F627B46E79005B4747 /* Database */,
-				9FAC21C527B44A150092F4BE /* AppDelegate.swift */,
-				9FAC21C727B44A150092F4BE /* SceneDelegate.swift */,
-				9FAC21D127B44A170092F4BE /* Assets.xcassets */,
-				9FAC21D327B44A170092F4BE /* LaunchScreen.storyboard */,
-				9FAC21D627B44A170092F4BE /* Info.plist */,
+				9F1CAD7B27B68BDC008CFB3D /* Resources */,
 			);
 			path = "To-Do List";
 			sourceTree = "<group>";
@@ -411,7 +419,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B44GZRWBN9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "To-Do List/Info.plist";
+				INFOPLIST_FILE = "To-Do List/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = TaskList;
@@ -439,7 +447,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B44GZRWBN9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "To-Do List/Info.plist";
+				INFOPLIST_FILE = "To-Do List/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = TaskList;
