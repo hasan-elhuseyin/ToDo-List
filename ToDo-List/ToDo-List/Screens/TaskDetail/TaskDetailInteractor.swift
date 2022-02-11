@@ -9,11 +9,12 @@ import Foundation
 
 class TaskDetailInteractor: TaskDetailInteractorProtocol, TaskDetailDataStoreProtocol {
     var presenter: TaskDetailPresenterProtocol?
+    var coreDataManager = CoreDataManager.shared
 
-    // var task: Task?
+    var task: Task?
 
     func viewDidLoad() {
-//        guard let task = task else { return }
-//        self.presenter?.handeOutput(.showTask(task))
+        guard let task = task else { return }
+        self.presenter?.handeOutput(.showTask(task))
     }
 }

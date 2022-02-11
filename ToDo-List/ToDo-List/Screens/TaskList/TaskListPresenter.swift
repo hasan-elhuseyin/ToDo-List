@@ -11,9 +11,9 @@ class TaskListPresenter: TaskListPresenterProtocol {
     weak var viewController: TaskListViewControllerProtocol?
 
     func handeOutput(_ output: TaskListInteractorOutput) {
-//        switch output {
-//        case .showTaskList(let tasks):
-//            viewController?.handleOutput(.showTaskList(tasks.map(TaskListPresentation.init)))
-//        }
+        switch output {
+        case .showTaskList(let tasks):
+            viewController?.handleOutput(.showTaskList(tasks))
+        }
     }
 }

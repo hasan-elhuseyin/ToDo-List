@@ -8,7 +8,7 @@
 import Foundation
 
 enum TaskDetailPresenterOutput {
-    // case showTask(TaskDetailPresentation)
+    case showTask(TaskDetailPresentation)
 }
 
 protocol TaskDetailViewProtocol: NSObject {
@@ -26,7 +26,7 @@ enum TaskDetailRoute {
 typealias TaskDetailRouterProtocol = TaskDetailRoutingProtocol & TaskDetailDataPassingProtocol
 
 protocol TaskDetailDataStoreProtocol {
-    // var task: Task? { get set }
+    var task: Task? { get set }
 }
 
 protocol TaskDetailDataPassingProtocol {
@@ -38,7 +38,7 @@ protocol TaskDetailRoutingProtocol {
 }
 
 enum TaskDetailInteractorOutput {
-    // case showTask(Task)
+    case showTask(Task)
 }
 
 protocol TaskDetailPresenterProtocol {

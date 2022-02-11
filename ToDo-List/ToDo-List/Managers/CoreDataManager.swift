@@ -20,10 +20,9 @@ class CoreDataManager {
     
     static let  shared = CoreDataManager()
     
-    // *************************************************************************************
     // Core Data stack (this code was generated automatically by xcode)
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "To_Do_List")
+        let container = NSPersistentContainer(name: "ToDo_List")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
@@ -31,7 +30,6 @@ class CoreDataManager {
         })
         return container
     }()
-    // *************************************************************************************
 
 }
 
@@ -65,15 +63,14 @@ extension CoreDataManager: CoreDataManagerProtocol {
         do {
             if managedContext.hasChanges{
                 try  managedContext.save()
+                print("Data saved successfully!")
             }
         } catch  {
             debugPrint("Error while saving data: \(error.localizedDescription)")
         }
     }
     
-
-    // *************************************************************************************
-    // Core Data Saving support (this code was generated automatically by xcode)
+    // Core Data Saving support
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
@@ -85,7 +82,6 @@ extension CoreDataManager: CoreDataManagerProtocol {
             }
         }
     }
-    // *************************************************************************************
     
 }
 
