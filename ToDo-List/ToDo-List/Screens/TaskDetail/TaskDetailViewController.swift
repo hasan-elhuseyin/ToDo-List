@@ -9,10 +9,6 @@ import UIKit
 
 class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
 
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var artistNameLabel: UILabel!
-    @IBOutlet weak var taskNameLabel: UILabel!
-
     var interactor: TaskDetailInteractorProtocol?
     var router: TaskDetailRouterProtocol?
 
@@ -30,8 +26,6 @@ class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
 //            imageView.kf.setImage(with: task.imageURL)
 //        }
     }
-
-    @IBAction func buttonTapped(_ sender: Any) {
-        router?.navigate(to: .showTaskList)
-    }
+    
+    
 }
