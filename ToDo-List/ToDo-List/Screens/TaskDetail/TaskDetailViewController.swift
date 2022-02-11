@@ -37,13 +37,15 @@ class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
         let creationDate = Date()
         let completionDate = datePicker.date
         guard let title = taskTitle.text,
-              let detail = taskTitle.text
+              let detail = taskDetail.text
         else {
             print("Error occurred while saving data.")
             return
         }
         
         CoreDataManager.shared.saveData(title: title, detail: detail, creationDate: creationDate, completionDate: completionDate)
+        
+        router?.navigate(to: .showTaskList)
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
