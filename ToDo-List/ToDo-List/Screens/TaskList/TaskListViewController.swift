@@ -18,7 +18,7 @@ class TaskListViewController: UIViewController, TaskListViewControllerProtocol {
     var interactor: TaskListInteractorProtocol?
     var router: TaskListRouterProtocol?
     
-    // private var tasks: [taskListPresentation] = []
+    // private var tasks: [taskListPresentation] = [] 
 
     override func viewDidLoad() {
         super.viewDidLoad()
