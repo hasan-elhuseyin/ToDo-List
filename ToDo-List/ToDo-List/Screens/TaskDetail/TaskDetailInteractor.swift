@@ -8,6 +8,7 @@
 import Foundation
 
 class TaskDetailInteractor: TaskDetailInteractorProtocol, TaskDetailDataStoreProtocol {
+    
     var presenter: TaskDetailPresenterProtocol?
     var coreDataManager = CoreDataManager.shared
 
@@ -17,4 +18,10 @@ class TaskDetailInteractor: TaskDetailInteractorProtocol, TaskDetailDataStorePro
         guard let task = task else { return }
         self.presenter?.handeOutput(.showTask(task))
     }
+    
+    func didSaveData(title: String, detail: String, completionDate: Date, creationDate: Date) {
+        coreDataManager.saveData(title: title, detail: detail, creationDate: creationDate, completionDate: completionDate)
+    }
+    
+    
 }

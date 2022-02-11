@@ -17,6 +17,7 @@ protocol TaskDetailViewProtocol: NSObject {
 
 protocol TaskDetailInteractorProtocol {
     func viewDidLoad()
+    func didSaveData(title: String, detail: String, completionDate: Date, creationDate: Date)
 }
 
 enum TaskDetailRoute {

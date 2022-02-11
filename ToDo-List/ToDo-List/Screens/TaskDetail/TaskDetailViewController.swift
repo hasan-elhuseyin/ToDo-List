@@ -43,7 +43,7 @@ class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
             return
         }
         
-        CoreDataManager.shared.saveData(title: title, detail: detail, creationDate: creationDate, completionDate: completionDate)
+        interactor?.didSaveData(title: title, detail: detail, completionDate: completionDate, creationDate: creationDate)
         
         router?.navigate(to: .showTaskList)
     }
