@@ -14,7 +14,7 @@ class TaskDetailRouter: TaskDetailRouterProtocol {
     func navigate(to route: TaskDetailRoute) {
         switch route {
         case .showTaskList:
-            viewController?.navigationController?.popViewController(animated: false)
+            viewController?.navigationController?.popViewController(animated: true)
         }
     }
 }
