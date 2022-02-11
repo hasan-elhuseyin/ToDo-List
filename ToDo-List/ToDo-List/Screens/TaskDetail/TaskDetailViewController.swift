@@ -9,10 +9,10 @@ import UIKit
 
 class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
 
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var artistNameLabel: UILabel!
-    @IBOutlet weak var taskNameLabel: UILabel!
-
+    @IBOutlet weak var taskTitle: UITextField!
+    @IBOutlet weak var taskDetail: UITextView!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     var interactor: TaskDetailInteractorProtocol?
     var router: TaskDetailRouterProtocol?
 
@@ -30,8 +30,12 @@ class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
 //            imageView.kf.setImage(with: task.imageURL)
 //        }
     }
-
-    @IBAction func buttonTapped(_ sender: Any) {
+    
+    @IBAction func saveButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func backButtonTapped(_ sender: Any) {
         router?.navigate(to: .showTaskList)
     }
+    
 }
