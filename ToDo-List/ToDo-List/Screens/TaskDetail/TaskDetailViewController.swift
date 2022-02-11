@@ -9,6 +9,10 @@ import UIKit
 
 class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
 
+    @IBOutlet weak var taskTitle: UITextField!
+    @IBOutlet weak var taskDetail: UITextView!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     var interactor: TaskDetailInteractorProtocol?
     var router: TaskDetailRouterProtocol?
 
@@ -27,5 +31,11 @@ class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
 //        }
     }
     
+    @IBAction func saveButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func backButtonTapped(_ sender: Any) {
+        router?.navigate(to: .showTaskList)
+    }
     
 }
