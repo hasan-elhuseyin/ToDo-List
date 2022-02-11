@@ -22,7 +22,7 @@ enum TasksListRoute {
 }
 
 // MARK: - Protocols
-protocol TaskListProtocol: NSObject {
+protocol TaskListViewControllerProtocol: NSObject {
     func handleOutput(_ output: TaskListPresenterOutput)
 }
 

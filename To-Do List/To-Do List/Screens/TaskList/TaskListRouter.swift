@@ -27,8 +27,6 @@ class TaskListRouter: TaskListRouterProtocol {
 
                 destinationDataStore?.tasks = [task]
                 
-                
-
                 viewController?.show(destinationViewController, sender: nil)
             }
 

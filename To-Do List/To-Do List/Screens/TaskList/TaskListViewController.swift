@@ -34,7 +34,7 @@ class TaskListViewController: UIViewController {
 
 // MARK: - Extensions
 // TaskListProtocol extension
-extension TaskListViewController: TaskListProtocol {
+extension TaskListViewController: TaskListViewControllerProtocol {
     func handleOutput(_ output: TaskListPresenterOutput) {
         
     }

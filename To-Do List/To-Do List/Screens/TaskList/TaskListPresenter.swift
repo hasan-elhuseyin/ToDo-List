@@ -9,7 +9,7 @@ import Foundation
 
 class TaskListPresenter {
     
-    weak var viewController: TaskListProtocol?
+    weak var viewController: TaskListViewControllerProtocol?
     
     
 }
