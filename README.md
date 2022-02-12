@@ -4,11 +4,16 @@ My graduation project for 148. Mobven iOS development bootcamp.
 
 ## Summary:
 
-* A task should consist of a title and details ✅
-* Tasks' titles should be shown in a list ✅
-* Tasks can be deleted in listing screen ✅
-* To see the detail of a task, a user should be able to navigate to detail screen ✅
-* A user should be able to save, delete and update a task in detail screen ✅
+* The app is made of 2 screens ✅
+* Atomic git commits ✅
+* GitFlow (Develop, feature branches, pull requests ...) ✅
+* Search tasks ✅
+* The screen refreshes when a task is updated ✅
+* Add and Update tasks uses the same screen ✅
+* Notifications using LocalNotificationManager ✅
+* If a task has no title it will not be added ✅
+* Both screens uses VIP pattern ✅
+* CoreData is reached using coreDataManager and coreDataManagerProtocol ✅
 
 | iPhone & iPad |
 | ------------- |
