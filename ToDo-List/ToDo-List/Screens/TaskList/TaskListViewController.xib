@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskListViewController" customModule="ToDo_List" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="LbY-qX-Duz" id="xO1-Eg-KCX"/>
                 <outlet property="tableView" destination="dy6-d8-KsY" id="m8w-DR-mdW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
