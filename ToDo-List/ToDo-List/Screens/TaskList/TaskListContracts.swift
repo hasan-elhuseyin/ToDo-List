@@ -30,6 +30,7 @@ protocol TaskListInteractorProtocol {
     func viewDidLoad()
     func didDeleteTask(task: Task)
     func didSortTasks()
+    func didSearchTask(searchText: String)
 }
 
 protocol TaskListPresenterProtocol {

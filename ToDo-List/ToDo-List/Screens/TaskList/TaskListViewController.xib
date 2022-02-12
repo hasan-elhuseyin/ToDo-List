@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskListViewController" customModule="ToDo_List" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="LbY-qX-Duz" id="xO1-Eg-KCX"/>
                 <outlet property="tableView" destination="dy6-d8-KsY" id="m8w-DR-mdW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -85,6 +86,9 @@
                 <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="LbY-qX-Duz">
                     <rect key="frame" x="0.0" y="100" width="414" height="51"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="hk6-c5-Yj7"/>
+                    </connections>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dy6-d8-KsY">
                     <rect key="frame" x="0.0" y="151" width="414" height="711"/>

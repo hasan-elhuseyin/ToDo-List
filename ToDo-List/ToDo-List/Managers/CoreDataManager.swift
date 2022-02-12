@@ -97,6 +97,19 @@ extension CoreDataManager: CoreDataManagerProtocol {
         return []
     }
     
+    func searchTask(searchText : String) -> [Task]{
+        let manageContext = persistentContainer.viewContext
+        let request = NSFetchRequest<Task>(entityName: "Task")
+        request.predicate = NSPredicate(format: "title contains[c] '\(searchText)'")
+        do {
+            let data = try manageContext.fetch(request)
+            return data
+        } catch  {
+            debugPrint("Error in searching function \(error.localizedDescription)")
+        }
+        return []
+    }
+    
     // Core Data Saving support
     func saveContext () {
         let context = persistentContainer.viewContext
