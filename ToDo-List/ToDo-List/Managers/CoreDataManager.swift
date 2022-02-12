@@ -82,6 +82,21 @@ extension CoreDataManager: CoreDataManagerProtocol {
         }
     }
     
+    func sortByCreationDate() -> [Task] {
+        let manageContext = persistentContainer.viewContext
+        let request = NSFetchRequest<Task>(entityName: "Task")
+        let sorter = NSSortDescriptor(key: "creationDate", ascending: false)
+        request.sortDescriptors = [sorter]
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try manageContext.fetch(request)
+            return result
+        } catch {
+            debugPrint("Error in sorting function \(error.localizedDescription)")
+        }
+        return []
+    }
+    
     // Core Data Saving support
     func saveContext () {
         let context = persistentContainer.viewContext

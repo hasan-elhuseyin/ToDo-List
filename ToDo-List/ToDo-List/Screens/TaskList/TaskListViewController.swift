@@ -48,6 +48,10 @@ class TaskListViewController: UIViewController, TaskListViewControllerProtocol {
         router?.navigate(to: .showNewTaskDetail)
     }
     
+    @IBAction func sortButtonTapped(_ sender: Any) {
+        interactor?.didSortTasks()
+    }
+    
 }
 
 extension TaskListViewController: UITableViewDelegate {
@@ -57,7 +61,7 @@ extension TaskListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            interactor?.didDeleteRow(task: tasks[indexPath.row])
+            interactor?.didDeleteTask(task: tasks[indexPath.row])
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
