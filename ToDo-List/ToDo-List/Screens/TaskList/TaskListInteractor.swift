@@ -38,6 +38,16 @@ class TaskListInteractor: TaskListInteractorProtocol, TaskListDataStoreProtocol 
         
     }
     
+    func didSearchTask(searchText: String) {
+        if searchText == "" {
+            tasks = coreDataManager.fetchData()
+            self.presenter?.handeOutput(.showTaskList(tasks))
+            return
+        }
+        tasks = coreDataManager.searchTask(searchText: searchText)
+        self.presenter?.handeOutput(.showTaskList(tasks))
+    }
+    
     
     func getTasks() {
         tasks = coreDataManager.fetchData()

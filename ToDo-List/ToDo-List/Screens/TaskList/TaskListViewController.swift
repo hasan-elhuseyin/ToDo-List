@@ -92,4 +92,8 @@ extension TaskListViewController: UITableViewDataSource {
     }
 }
 
-
+extension TaskListViewController : UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        interactor?.didSearchTask(searchText: searchText)
+    }
+}
