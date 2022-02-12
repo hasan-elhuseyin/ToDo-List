@@ -26,6 +26,12 @@ class TaskListViewController: UIViewController, TaskListViewControllerProtocol {
         interactor?.viewDidLoad()
         tableView.register(UINib(nibName: "TaskCell", bundle: nil), forCellReuseIdentifier: "TaskCell")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // Reload tableView content if view will appear
+        interactor?.viewDidLoad()
+        tableView.reloadData()
+    }
 
     func handleOutput(_ output: TaskListPresenterOutput) {
         switch output {
