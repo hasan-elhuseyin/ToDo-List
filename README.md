@@ -17,7 +17,7 @@ My graduation project for 148. Mobven iOS development bootcamp.
 
 | iPhone & iPad |
 | ------------- |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/devices.png) |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/devices.png) |
 
 
 Table of contents
@@ -43,11 +43,11 @@ Screenshots
 
 | Add Task | Edit Task | Notification |
 | -------- | --------- | ------------ |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/addTask.gif)  | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/editTask.gif) |  ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/taskNotification.gif) |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/addTask.gif)  | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/editTask.gif) |  ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/taskNotification.gif) |
 
 | Search Tasks | Sort Tasks | Delete Task |
 | ------------ | ---------- | ----------- |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/searchingTask.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/sortingTasks.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/deletingTask.gif) |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/searchingTask.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/sortingTasks.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/deletingTask.gif) |
 
 Technologies
 ============
@@ -56,7 +56,7 @@ Technologies
 
 | VIP Design Pattern |
 | ------------------ |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/vip.jpeg) |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/vip.jpeg) |
 
 Installation
 ============
