@@ -46,7 +46,7 @@ class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
         // Declare the variables needed for the notification
         let creationDate = Date()
         let completionDate = datePicker.date
-        guard let title = taskTitle.text,
+        guard let title = taskTitle.text, taskTitle.text != "",
               let detail = taskDetail.text
         else {
             print("Error occurred while saving data.")
