@@ -10,6 +10,10 @@ My graduation project for 148. Mobven iOS development bootcamp.
 * To see the detail of a task, a user should be able to navigate to detail screen ✅
 * A user should be able to save, delete and update a task in detail screen ✅
 
+| iPhone & iPad |
+| ------------- |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/devices.png) |
+
 
 Table of contents
 =================
@@ -40,13 +44,6 @@ Technologies
 
 Screenshots
 ===========
-
-### Important Note:
-These Screenshots will only show properly after merging to main, because all the links in README file points to main branch.
-
-| iPhone & iPad |
-| ------------- |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/devices.png) |
 
 | Add Goal | Button on top of keyboard | Select Priority |
 | -------- | ------------------------- | --------------- |
