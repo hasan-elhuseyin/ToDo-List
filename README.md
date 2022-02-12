@@ -20,8 +20,8 @@ Table of contents
 
 <!--ts-->
    * [Features](#features)
-   * [Technologies](#technologies)
    * [Screenshots](#screenshots)
+   * [Technologies](#technologies)
    * [Installation](#installation)
 <!--te-->
 
@@ -31,16 +31,6 @@ Features
 + Update existing tasks
 + Swipe to delete tasks
 + Get a notification of your tasks
-
-Technologies
-============
-1. CoreData
-2. VIP Design Pattern
-
-| VIP Design Pattern |
-| ------------------ |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/vip.jpeg) |
-
 
 Screenshots
 ===========
@@ -52,6 +42,15 @@ Screenshots
 | Add Goal Info | Completed Goals! | Delete Goals |
 | ------------- | ---------------- | ------------ |
 | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/descriptionandpoints.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/complete.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/delete.gif) |
+
+Technologies
+============
+1. CoreData
+2. VIP Design Pattern
+
+| VIP Design Pattern |
+| ------------------ |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/vip.jpeg) |
 
 Installation
 ============
