@@ -35,13 +35,13 @@ Features
 Screenshots
 ===========
 
-| Add Goal | Button on top of keyboard | Select Priority |
-| -------- | ------------------------- | --------------- |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/addtask.gif)  | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/keyboard.gif) |  ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/priority.gif) |
+| Add Task | Edit Task | Notification |
+| -------- | --------- | ------------ |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/addTask.gif)  | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/editTask.gif) |  ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/taskNotification.gif) |
 
-| Add Goal Info | Completed Goals! | Delete Goals |
-| ------------- | ---------------- | ------------ |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/descriptionandpoints.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/complete.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/delete.gif) |
+| Search Tasks | Sort Tasks | Delete Task |
+| ------------ | ---------- | ----------- |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/searchingTask.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/sortingTask.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/deletingTask.gif) |
 
 Technologies
 ============
