@@ -28,7 +28,7 @@ Technologies
 
 | iPhone & iPad |
 | ------------- |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/vip.jpeg) |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/vip.jpeg) |
 
 
 Features
@@ -47,15 +47,15 @@ These Screenshots will only show properly after merging to main, because all the
 
 | iPhone & iPad |
 | ------------- |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/devices.png) |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/devices.png) |
 
 | Add Goal | Button on top of keyboard | Select Priority |
 | -------- | ------------------------- | --------------- |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/addtask.gif)  | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/keyboard.gif) |  ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/priority.gif) |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/addtask.gif)  | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/keyboard.gif) |  ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/priority.gif) |
 
 | Add Goal Info | Completed Goals! | Delete Goals |
 | ------------- | ---------------- | ------------ |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/descriptionandpoints.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/complete.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/main/ReadmeFiles/delete.gif) |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/descriptionandpoints.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/complete.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/delete.gif) |
 
 Installation
 ============
