@@ -8,8 +8,10 @@
 import Foundation
 
 class TaskListPresenter: TaskListPresenterProtocol {
+    // MARK: - Variables
     weak var viewController: TaskListViewControllerProtocol?
-
+    
+    // MARK: - Functions
     func handeOutput(_ output: TaskListInteractorOutput) {
         switch output {
         case .showTaskList(let tasks):

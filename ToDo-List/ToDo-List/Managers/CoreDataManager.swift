@@ -10,15 +10,14 @@ import CoreData
 
 // MARK: - Protocol
 protocol CoreDataManagerProtocol {
-    func fetchData() -> [Task]
-    func saveData(title: String, detail: String, creationDate: Date, completionDate: Date)
+    func fetchAllTasks() -> [Task]
+    func saveTask(title: String, detail: String, creationDate: Date, completionDate: Date)
     func deleteData(task: Task)
 }
 
 
 // MARK: - CoreDataManager class
 class CoreDataManager {
-    
     static let  shared = CoreDataManager()
     
     // Core Data stack (this code was generated automatically by xcode)
@@ -37,8 +36,8 @@ class CoreDataManager {
 
 // MARK: - Extension
 extension CoreDataManager: CoreDataManagerProtocol {
-    // Function for fetching data from CoreData model
-    func fetchData() -> [Task] {
+    // Function for fetching all the tasks from CoreData model
+    func fetchAllTasks() -> [Task] {
         let fetchRequest = NSFetchRequest<Task>(entityName: "Task")
         let managedContext = persistentContainer.viewContext
         fetchRequest.returnsObjectsAsFaults = false
@@ -54,9 +53,9 @@ extension CoreDataManager: CoreDataManagerProtocol {
     }
     
     // Function for saving data to CoreData model
-    func saveData(title: String, detail: String, creationDate: Date, completionDate: Date) {
+    func saveTask(title: String, detail: String, creationDate: Date, completionDate: Date) {
         let managedContext = persistentContainer.viewContext
-        let task = Task(context: managedContext )
+        let task = Task(context: managedContext)
         task.title = title
         task.detail = detail
         task.creationDate = Date()
@@ -71,6 +70,7 @@ extension CoreDataManager: CoreDataManagerProtocol {
         }
     }
     
+    // Function for deleting a task
     func deleteData(task : Task) {
         let manageContext = persistentContainer.viewContext
         manageContext.delete(task)
@@ -82,6 +82,23 @@ extension CoreDataManager: CoreDataManagerProtocol {
         }
     }
     
+    // Function for updating a task
+    func updateData(task : Task, title : String, detail : String, date : Date) {
+        let manageContext = persistentContainer.viewContext
+        task.title = title
+        task.detail = detail
+        task.completionDate = date
+        task.creationDate = Date()
+        do {
+            if manageContext.hasChanges{
+                try manageContext.save()
+            }
+        } catch  {
+            debugPrint("Error while updating data \(error.localizedDescription)")
+        }
+    }
+    
+    // Function for sorting the tasks
     func sortByCreationDate() -> [Task] {
         let manageContext = persistentContainer.viewContext
         let request = NSFetchRequest<Task>(entityName: "Task")
@@ -97,6 +114,7 @@ extension CoreDataManager: CoreDataManagerProtocol {
         return []
     }
     
+    // Function for searching a task
     func searchTask(searchText : String) -> [Task]{
         let manageContext = persistentContainer.viewContext
         let request = NSFetchRequest<Task>(entityName: "Task")

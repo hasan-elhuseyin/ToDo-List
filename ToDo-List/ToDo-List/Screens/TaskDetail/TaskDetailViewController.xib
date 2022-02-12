@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskDetailViewController" customModule="ToDo_List" customModuleProvider="target">
             <connections>
                 <outlet property="datePicker" destination="QyT-1x-Heu" id="4Mg-Wr-KeE"/>
+                <outlet property="saveButton" destination="T1N-6X-dlG" id="BlT-tV-cb9"/>
                 <outlet property="taskDetail" destination="SBD-6J-Xn9" id="yJ5-aA-hrk"/>
                 <outlet property="taskTitle" destination="8Gv-gj-iwe" id="57J-Y9-rZW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -112,6 +113,9 @@
                     <color key="textColor" systemColor="labelColor"/>
                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="d5z-nM-ycq"/>
+                    </connections>
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completion date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWD-hr-Phx">
                     <rect key="frame" x="20" y="401.5" width="137.5" height="33"/>
@@ -133,6 +137,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="fnb-4p-FN5"/>
+                    </connections>
                 </textField>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

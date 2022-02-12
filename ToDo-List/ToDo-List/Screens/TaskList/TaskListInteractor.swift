@@ -24,7 +24,7 @@ class TaskListInteractor: TaskListInteractorProtocol, TaskListDataStoreProtocol 
     // Deletion function
     func didDeleteTask(task: Task) {
         coreDataManager.deleteData(task: task)
-        tasks = coreDataManager.fetchData()
+        tasks = coreDataManager.fetchAllTasks()
         self.presenter?.handeOutput(.showTaskList(tasks))
     }
     
@@ -37,7 +37,7 @@ class TaskListInteractor: TaskListInteractorProtocol, TaskListDataStoreProtocol 
             tasksAreSorted = true
         }else {
             // If the tasks are sorted, fetchData normally
-            tasks = coreDataManager.fetchData()
+            tasks = coreDataManager.fetchAllTasks()
             self.presenter?.handeOutput(.showTaskList(tasks))
             tasksAreSorted = false
         }
@@ -46,7 +46,7 @@ class TaskListInteractor: TaskListInteractorProtocol, TaskListDataStoreProtocol 
     // Searching function
     func didSearchTask(searchText: String) {
         if searchText == "" {
-            tasks = coreDataManager.fetchData()
+            tasks = coreDataManager.fetchAllTasks()
             self.presenter?.handeOutput(.showTaskList(tasks))
             return
         }
@@ -56,7 +56,7 @@ class TaskListInteractor: TaskListInteractorProtocol, TaskListDataStoreProtocol 
     
     // Get all tasks
     func getTasks() {
-        tasks = coreDataManager.fetchData()
+        tasks = coreDataManager.fetchAllTasks()
         self.presenter?.handeOutput(.showTaskList(tasks))
     }
 }

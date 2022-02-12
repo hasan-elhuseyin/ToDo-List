@@ -23,10 +23,11 @@ class TaskListViewController: UIViewController, TaskListViewControllerProtocol {
     
     // MARK: - Variables
     private var tasks: [Task] = []
-
+    
+    // viewDidLoad function
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         interactor?.viewDidLoad()
         tableView.register(UINib(nibName: "TaskCell", bundle: nil), forCellReuseIdentifier: "TaskCell")
     }
@@ -38,7 +39,8 @@ class TaskListViewController: UIViewController, TaskListViewControllerProtocol {
         // Reset searchText in searchBar
         searchBar.text = ""
     }
-
+    
+    // handOutput function
     func handleOutput(_ output: TaskListPresenterOutput) {
         switch output {
         case .showTaskList(let tasks):
@@ -84,25 +86,29 @@ extension TaskListViewController: UITableViewDataSource {
         // Set the number of rows in the tableView
         return tasks.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Create a cell, configure it and return it
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskCell
         cell.titleLabel.text = tasks[indexPath.row].title
         cell.detailLabel.text = tasks[indexPath.row].detail
         let date = tasks[indexPath.row].completionDate
-        cell.completionDate.text = configureDate(date: date!)
+        cell.completionDate.text = configureDate(date: date!, type: "Date")
+        cell.completionTime.text = configureDate(date: date!, type: "Time")
         return cell
     }
     
     // Function to convert Date to String
-    func configureDate(date: Date) -> String {
-        // Create Date Formatter
+    func configureDate(date: Date, type: String) -> String {
         let dateFormatter = DateFormatter()
-        // Set Date Format
-        dateFormatter.dateFormat = "dd/MM/yyyy"
-        // Convert Date to String
-        return dateFormatter.string(from: date)
+        if type == "Date"{
+            dateFormatter.dateFormat = "dd/MM/yyyy"
+            return dateFormatter.string(from: date)
+        }else if type == "Time" {
+            dateFormatter.dateFormat = "hh:mm"
+            return dateFormatter.string(from: date)
+        }
+        return "Date and time error"
     }
 }
 

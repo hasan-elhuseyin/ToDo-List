@@ -8,8 +8,10 @@
 import Foundation
 
 class TaskDetailPresenter: TaskDetailPresenterProtocol {
+    // MARK: - Variables
     weak var viewController: TaskDetailViewProtocol?
-
+    
+    // MARK: - Functions
     func handeOutput(_ output: TaskDetailInteractorOutput) {
         switch output {
         case .showTask(let task):

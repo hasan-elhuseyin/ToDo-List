@@ -28,6 +28,7 @@ protocol TaskDetailViewProtocol: NSObject {
 protocol TaskDetailInteractorProtocol {
     func viewDidLoad()
     func didSaveData(title: String, detail: String, completionDate: Date, creationDate: Date)
+    func didUpdateData(realTask: Task, title: String, detail: String, completionDate: Date, creationDate: Date)
 }
 
 protocol TaskDetailDataStoreProtocol {
