@@ -15,21 +15,11 @@ Table of contents
 =================
 
 <!--ts-->
-   * [Technologies](#technologies)
    * [Features](#features)
+   * [Technologies](#technologies)
    * [Screenshots](#screenshots)
    * [Installation](#installation)
 <!--te-->
-
-Technologies
-============
-1. CoreData
-2. VIP Design Pattern
-
-| iPhone & iPad |
-| ------------- |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/vip.jpeg) |
-
 
 Features
 ========
@@ -37,6 +27,15 @@ Features
 + Update existing tasks
 + Swipe to delete tasks
 + Get a notification of your tasks
+
+Technologies
+============
+1. CoreData
+2. VIP Design Pattern
+
+| VIP Design Pattern |
+| ------------------ |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/vip.jpeg) |
 
 
 Screenshots
