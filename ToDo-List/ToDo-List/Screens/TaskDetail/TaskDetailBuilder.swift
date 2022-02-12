@@ -13,7 +13,10 @@ class TaskDetailBuilder {
         let interactor = TaskDetailInteractor()
         let presenter = TaskDetailPresenter()
         let router = TaskDetailRouter()
-
+        
+        let notificationManager = LocalNotificationManager()
+        interactor.notificationManager = notificationManager
+        
         viewController.interactor = interactor
         viewController.router = router
         interactor.presenter = presenter
