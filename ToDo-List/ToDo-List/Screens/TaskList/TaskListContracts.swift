@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Enums
 enum TaskListPresenterOutput {
-    // case showTaskList([TaskListPresentation])
+    case showTaskList([Task])
 }
 
 enum TaskListRoute {
@@ -18,7 +18,7 @@ enum TaskListRoute {
 }
 
 enum TaskListInteractorOutput {
-    // case showTaskList([Task])
+    case showTaskList([Task])
 }
 
 // MARK: - Protocols
@@ -28,6 +28,7 @@ protocol TaskListViewControllerProtocol: NSObject {
 
 protocol TaskListInteractorProtocol {
     func viewDidLoad()
+    func didDeleteRow(task: Task)
 }
 
 protocol TaskListPresenterProtocol {
@@ -35,7 +36,7 @@ protocol TaskListPresenterProtocol {
 }
 
 protocol TaskListDataStoreProtocol {
-    // var tasks: [Task] { get set }
+    var tasks: [Task] { get set }
 }
 
 typealias TaskListRouterProtocol = TaskListRoutingProtocol & TaskListDataPassingProtocol

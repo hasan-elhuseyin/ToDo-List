@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class TaskListRouter: TaskListRouterProtocol {
     weak var viewController: TaskListViewController?
@@ -13,22 +14,26 @@ class TaskListRouter: TaskListRouterProtocol {
 
     func navigate(to route: TaskListRoute) {
         switch route {
+            
         case .showNewTaskDetail:
-            let destinationVC = TaskListBuilder.build()
-            viewController?.show(destinationVC, sender: nil)
-        case .showEditTaskDetail(_):
             let destinationVC = TaskDetailBuilder.build()
             viewController?.show(destinationVC, sender: nil)
-//            if let tasks = dataStore?.tasks {
-//                let task = tasks[index]
-//
-//                //let destinationVC = TaskDetailBuilder.build(with: task)
-//                let destinationVC = TaskDetailBuilder.build()
-//                var destinationDataStore = destinationVC.router?.dataStore
-//
-//                destinationDataStore?.task = task
-//                viewController?.show(destinationVC, sender: nil)
-//            }
+            return
+            
+        case .showEditTaskDetail(index: let index):
+            if let tasks = dataStore?.tasks {
+                let task = tasks[index]
+
+                let destinationVC = TaskDetailBuilder.build(with: task)
+
+                var destinationDataStore = destinationVC.router?.dataStore
+                destinationDataStore?.task = task
+                
+                viewController?.show(destinationVC, sender: nil)
+                return
+            }
+            
         }
     }
+    
 }

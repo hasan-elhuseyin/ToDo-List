@@ -9,25 +9,22 @@ import Foundation
 
 class TaskListInteractor: TaskListInteractorProtocol, TaskListDataStoreProtocol {
     var presenter: TaskListPresenterProtocol?
-
-//    var tasks: [Task] = []
-//    let networkWorker: ClientNetworkServiceProtocol
-//
-//    init(networkWorker: ClientNetworkServiceProtocol) {
-//        self.networkWorker = networkWorker
-//    }
+    var coreDataManager = CoreDataManager.shared
+    var tasks: [Task] = []
 
     func viewDidLoad() {
         getTasks()
     }
-
+    
+    func didDeleteRow(task: Task) {
+        coreDataManager.deleteData(task: task)
+        tasks = coreDataManager.fetchData()
+        self.presenter?.handeOutput(.showTaskList(tasks))
+    }
+    
+    
     func getTasks() {
-//        networkWorker.tasks { [weak self] response, error in
-//            guard let self = self else { return }
-//            guard let response = response else { return }
-//            let tasks = response.feed.tasks
-//            self.tasks = tasks
-//            self.presenter?.handeOutput(.showTaskList(tasks))
-//        }
+        tasks = coreDataManager.fetchData()
+        self.presenter?.handeOutput(.showTaskList(tasks))
     }
 }

@@ -7,27 +7,38 @@
 
 import Foundation
 
+// MARK: - Enums
 enum TaskDetailPresenterOutput {
-    // case showTask(TaskDetailPresentation)
-}
-
-protocol TaskDetailViewProtocol: NSObject {
-    func handleOutput(_ output: TaskDetailPresenterOutput)
-}
-
-protocol TaskDetailInteractorProtocol {
-    func viewDidLoad()
+    case showTask(TaskDetailPresentation)
 }
 
 enum TaskDetailRoute {
     case showTaskList
 }
 
-typealias TaskDetailRouterProtocol = TaskDetailRoutingProtocol & TaskDetailDataPassingProtocol
+enum TaskDetailInteractorOutput {
+    case showTask(Task)
+}
+
+// MARK: - Protocols
+protocol TaskDetailViewProtocol: NSObject {
+    func handleOutput(_ output: TaskDetailPresenterOutput)
+}
+
+protocol TaskDetailInteractorProtocol {
+    func viewDidLoad()
+    func didSaveData(title: String, detail: String, completionDate: Date, creationDate: Date)
+}
 
 protocol TaskDetailDataStoreProtocol {
-    // var task: Task? { get set }
+    var task: Task? { get set }
 }
+
+protocol TaskDetailPresenterProtocol {
+    func handeOutput(_ output: TaskDetailInteractorOutput)
+}
+
+typealias TaskDetailRouterProtocol = TaskDetailRoutingProtocol & TaskDetailDataPassingProtocol
 
 protocol TaskDetailDataPassingProtocol {
     var dataStore: TaskDetailDataStoreProtocol? { get }
@@ -35,12 +46,4 @@ protocol TaskDetailDataPassingProtocol {
 
 protocol TaskDetailRoutingProtocol {
     func navigate(to route: TaskDetailRoute)
-}
-
-enum TaskDetailInteractorOutput {
-    // case showTask(Task)
-}
-
-protocol TaskDetailPresenterProtocol {
-    func handeOutput(_ output: TaskDetailInteractorOutput)
 }
