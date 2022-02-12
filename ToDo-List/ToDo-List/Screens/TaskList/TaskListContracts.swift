@@ -28,7 +28,9 @@ protocol TaskListViewControllerProtocol: NSObject {
 
 protocol TaskListInteractorProtocol {
     func viewDidLoad()
-    func didDeleteRow(task: Task)
+    func didDeleteTask(task: Task)
+    func didSortTasks()
+    func didSearchTask(searchText: String)
 }
 
 protocol TaskListPresenterProtocol {
