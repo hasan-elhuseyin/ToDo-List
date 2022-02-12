@@ -26,12 +26,5 @@ class TaskListInteractor: TaskListInteractorProtocol, TaskListDataStoreProtocol 
     func getTasks() {
         tasks = coreDataManager.fetchData()
         self.presenter?.handeOutput(.showTaskList(tasks))
-//        networkWorker.tasks { [weak self] response, error in
-//            guard let self = self else { return }
-//            guard let response = response else { return }
-//            let tasks = response.feed.tasks
-//            self.tasks = tasks
-//            self.presenter?.handeOutput(.showTaskList(tasks))
-//        }
     }
 }
