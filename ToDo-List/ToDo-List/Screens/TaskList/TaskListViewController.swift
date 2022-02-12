@@ -72,8 +72,19 @@ extension TaskListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskCell
         cell.titleLabel.text = tasks[indexPath.row].title
         cell.detailLabel.text = tasks[indexPath.row].detail
-        cell.completionDate.text = "10/02/2022"
+        let date = tasks[indexPath.row].completionDate
+        cell.completionDate.text = configureDate(date: date!)
         return cell
+    }
+    
+    // Function to convert Date to String
+    func configureDate(date: Date) -> String {
+        // Create Date Formatter
+        let dateFormatter = DateFormatter()
+        // Set Date Format
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        // Convert Date to String
+        return dateFormatter.string(from: date)
     }
 }
 
