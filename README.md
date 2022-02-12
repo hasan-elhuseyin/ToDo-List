@@ -5,15 +5,15 @@ My graduation project for 148. Mobven iOS development bootcamp.
 ## Summary:
 
 * The app is made of 2 screens ✅
+* The screen refreshes when a task is updated ✅
+* Add and Update tasks uses the same screen ✅
+* If a task has no title it will not be added ✅
 * Atomic git commits ✅
 * GitFlow (Develop, feature branches, pull requests ...) ✅
 * Search tasks ✅
-* The screen refreshes when a task is updated ✅
-* Add and Update tasks uses the same screen ✅
 * Notifications using LocalNotificationManager ✅
-* If a task has no title it will not be added ✅
-* Both screens uses VIP pattern ✅
 * CoreData is reached using coreDataManager and coreDataManagerProtocol ✅
+* Both screens uses VIP pattern ✅
 
 | iPhone & iPad |
 | ------------- |
