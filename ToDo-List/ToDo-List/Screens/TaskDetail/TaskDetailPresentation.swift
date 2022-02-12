@@ -8,10 +8,12 @@
 import Foundation
 
 struct TaskDetailPresentation {
+    // MARK: - Variables
     let title: String
     let detail: String
     let completionDate: Date
-
+    
+    // MARK: - Initializers
     init(title: String, detail: String, completionDate: Date) {
         self.title = title
         self.detail = detail

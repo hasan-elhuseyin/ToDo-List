@@ -9,7 +9,7 @@ import UIKit
 
 class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
     
-    // MARK: - IBActions
+    // MARK: - IBOutlets
     @IBOutlet weak var taskTitle: UITextField!
     @IBOutlet weak var taskDetail: UITextView!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -17,13 +17,12 @@ class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
     // MARK: - Variables
     var interactor: TaskDetailInteractorProtocol?
     var router: TaskDetailRouterProtocol?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         interactor?.viewDidLoad()
     }
-
+    
     func handleOutput(_ output: TaskDetailPresenterOutput) {
         switch output {
         case .showTask(let task):
@@ -33,6 +32,7 @@ class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
         }
     }
     
+    // MARK: - IBActions
     @IBAction func saveButtonTapped(_ sender: Any) {
         let creationDate = Date()
         let completionDate = datePicker.date
@@ -44,7 +44,6 @@ class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
         }
         
         interactor?.didSaveData(title: title, detail: detail, completionDate: completionDate, creationDate: creationDate)
-        
         router?.navigate(to: .showTaskList)
     }
     

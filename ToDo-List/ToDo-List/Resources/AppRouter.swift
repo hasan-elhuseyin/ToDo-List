@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class AppRouter {
+    // Configure the window and start the aoo from TaskListBuilder.build() function
     func start(scene: UIWindowScene) -> UIWindow {
         let window = UIWindow(frame: UIScreen.main.bounds)
         let taskListVC = TaskListBuilder.build()

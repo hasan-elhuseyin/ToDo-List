@@ -28,6 +28,7 @@
 		239AD16627A6716500BB4E75 /* TaskDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239AD16527A6716500BB4E75 /* TaskDetailRouter.swift */; };
 		9F088AEE27B6A477003F6655 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F088AEC27B6A477003F6655 /* TaskCell.swift */; };
 		9F088AEF27B6A477003F6655 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F088AED27B6A477003F6655 /* TaskCell.xib */; };
+		9F48725E27B76CCD00B46BCC /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48725D27B76CCD00B46BCC /* LocalNotificationManager.swift */; };
 		9FB93ECA27B6B9090080008A /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB93EC927B6B9080080008A /* AppContainer.swift */; };
 		9FB93ECD27B6B92D0080008A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB93ECC27B6B92D0080008A /* AppRouter.swift */; };
 		9FB93ED327B6BAD30080008A /* ToDo_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FB93ED127B6BAD30080008A /* ToDo_List.xcdatamodeld */; };
@@ -58,6 +59,7 @@
 		239AD16527A6716500BB4E75 /* TaskDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailRouter.swift; sourceTree = "<group>"; };
 		9F088AEC27B6A477003F6655 /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		9F088AED27B6A477003F6655 /* TaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		9F48725D27B76CCD00B46BCC /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		9FB93EC927B6B9080080008A /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		9FB93ECC27B6B92D0080008A /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		9FB93ED227B6BAD30080008A /* ToDo_List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDo_List.xcdatamodel; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				9FB93ED427B6BB1B0080008A /* CoreDataManager.swift */,
+				9F48725D27B76CCD00B46BCC /* LocalNotificationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				239AD15627A6711200BB4E75 /* TaskDetailBuilder.swift in Sources */,
 				9F088AEE27B6A477003F6655 /* TaskCell.swift in Sources */,
 				239AD16027A6714100BB4E75 /* TaskDetailPresentation.swift in Sources */,
+				9F48725E27B76CCD00B46BCC /* LocalNotificationManager.swift in Sources */,
 				2365D6A127A5564A00B95FEE /* TaskListRouter.swift in Sources */,
 				239AD16427A6715D00BB4E75 /* TaskDetailPresenter.swift in Sources */,
 				2365D69D27A5562800B95FEE /* TaskListInteractor.swift in Sources */,
