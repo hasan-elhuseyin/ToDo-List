@@ -1,4 +1,4 @@
-# TODO**LIST**
+# hasan-elhuseyin-final-project (ToDo-List)
 My graduation project for 148. Mobven iOS development bootcamp.
 
 
@@ -31,6 +31,7 @@ Features
 + Update existing tasks
 + Swipe to delete tasks
 + Get a notification of your tasks
++ Adaptive screen sizes for iPhone & iPad
 
 Screenshots
 ===========
