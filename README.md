@@ -41,7 +41,7 @@ Screenshots
 
 | Search Tasks | Sort Tasks | Delete Task |
 | ------------ | ---------- | ----------- |
-| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/searchingTask.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/sortingTask.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/deletingTask.gif) |
+| ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/searchingTask.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/sortingTasks.gif) | ![image](https://github.com/148-Mobven-iOS-Bootcamp/hasan-elhuseyin-final-project/blob/readme/ReadmeFiles/deletingTask.gif) |
 
 Technologies
 ============
