@@ -23,10 +23,11 @@ class TaskListViewController: UIViewController, TaskListViewControllerProtocol {
     
     // MARK: - Variables
     private var tasks: [Task] = []
-
+    
+    // viewDidLoad function
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         interactor?.viewDidLoad()
         tableView.register(UINib(nibName: "TaskCell", bundle: nil), forCellReuseIdentifier: "TaskCell")
     }
@@ -38,7 +39,8 @@ class TaskListViewController: UIViewController, TaskListViewControllerProtocol {
         // Reset searchText in searchBar
         searchBar.text = ""
     }
-
+    
+    // handOutput function
     func handleOutput(_ output: TaskListPresenterOutput) {
         switch output {
         case .showTaskList(let tasks):
@@ -84,7 +86,7 @@ extension TaskListViewController: UITableViewDataSource {
         // Set the number of rows in the tableView
         return tasks.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Create a cell, configure it and return it
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell") as! TaskCell

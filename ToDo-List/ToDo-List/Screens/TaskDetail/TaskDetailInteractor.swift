@@ -23,8 +23,8 @@ class TaskDetailInteractor: TaskDetailInteractorProtocol, TaskDetailDataStorePro
         self.presenter?.handeOutput(.showTask(task))
     }
     
+    // Save the data to CoreData model
     func didSaveData(title: String, detail: String, completionDate: Date, creationDate: Date) {
-        // Save the data to CoreData model
         coreDataManager.saveTask(title: title, detail: detail, creationDate: creationDate, completionDate: completionDate)
         
         // Create a notification for the task, using notificatonManaager
@@ -33,6 +33,11 @@ class TaskDetailInteractor: TaskDetailInteractorProtocol, TaskDetailDataStorePro
         notificationManager?.notificationList.append(notification)
         notificationManager?.createNotification()
         
+    }
+    
+    // Update the data in CoreData model
+    func didUpdateData(realTask: Task, title: String, detail: String, completionDate: Date, creationDate: Date) {
+        coreDataManager.updateData(task: realTask, title: title, detail: detail, date: completionDate)
     }
     
     

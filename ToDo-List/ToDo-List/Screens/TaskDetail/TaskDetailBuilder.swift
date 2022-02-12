@@ -8,6 +8,8 @@
 import Foundation
 
 class TaskDetailBuilder {
+    
+    // MARK: - build function for the normal build requests
     static func build() -> TaskDetailViewController {
         let viewController = TaskDetailViewController(nibName: "TaskDetailViewController", bundle: nil)
         let interactor = TaskDetailInteractor()
@@ -25,6 +27,8 @@ class TaskDetailBuilder {
         router.dataStore = interactor
         return viewController
     }
+    
+    // MARK: - build function for the build requests that passes a task
     static func build(with task: Task) -> TaskDetailViewController {
         let viewController = TaskDetailViewController(nibName: "TaskDetailViewController", bundle: nil)
         let interactor = TaskDetailInteractor()
@@ -39,6 +43,7 @@ class TaskDetailBuilder {
         router.dataStore = interactor
         
         interactor.task = task
+        viewController.realTask = task
         
         return viewController
     }

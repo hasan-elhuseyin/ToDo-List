@@ -82,6 +82,22 @@ extension CoreDataManager: CoreDataManagerProtocol {
         }
     }
     
+    // Function for updating a task
+    func updateData(task : Task, title : String, detail : String, date : Date) {
+        let manageContext = persistentContainer.viewContext
+        task.title = title
+        task.detail = detail
+        task.completionDate = date
+        task.creationDate = Date()
+        do {
+            if manageContext.hasChanges{
+                try manageContext.save()
+            }
+        } catch  {
+            debugPrint("Error while updating data \(error.localizedDescription)")
+        }
+    }
+    
     // Function for sorting the tasks
     func sortByCreationDate() -> [Task] {
         let manageContext = persistentContainer.viewContext
