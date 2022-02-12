@@ -11,9 +11,9 @@ class TaskDetailPresenter: TaskDetailPresenterProtocol {
     weak var viewController: TaskDetailViewProtocol?
 
     func handeOutput(_ output: TaskDetailInteractorOutput) {
-//        switch output {
-//        case .showTask(let task):
-//            viewController?.handleOutput(.showTask(TaskDetailPresentation(task: task)))
-//        }
+        switch output {
+        case .showTask(let task):
+            viewController?.handleOutput(.showTask(TaskDetailPresentation(task: task)))
+        }
     }
 }

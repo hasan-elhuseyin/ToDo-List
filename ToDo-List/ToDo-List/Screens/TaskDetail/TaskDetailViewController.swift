@@ -8,11 +8,13 @@
 import UIKit
 
 class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
-
+    
+    // MARK: - IBActions
     @IBOutlet weak var taskTitle: UITextField!
     @IBOutlet weak var taskDetail: UITextView!
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    // MARK: - Variables
     var interactor: TaskDetailInteractorProtocol?
     var router: TaskDetailRouterProtocol?
 
@@ -23,15 +25,27 @@ class TaskDetailViewController: UIViewController, TaskDetailViewProtocol {
     }
 
     func handleOutput(_ output: TaskDetailPresenterOutput) {
-//        switch output {
-//        case .showTask(let task):
-//            artistNameLabel.text = task.artistName
-//            taskNameLabel.text = task.title
-//            imageView.kf.setImage(with: task.imageURL)
-//        }
+        switch output {
+        case .showTask(let task):
+            taskTitle.text = task.title
+            taskDetail.text = task.detail
+            datePicker.date = task.completionDate
+        }
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
+        let creationDate = Date()
+        let completionDate = datePicker.date
+        guard let title = taskTitle.text,
+              let detail = taskDetail.text
+        else {
+            print("Error occurred while saving data.")
+            return
+        }
+        
+        interactor?.didSaveData(title: title, detail: detail, completionDate: completionDate, creationDate: creationDate)
+        
+        router?.navigate(to: .showTaskList)
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
