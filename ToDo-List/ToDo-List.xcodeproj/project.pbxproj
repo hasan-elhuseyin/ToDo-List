@@ -98,7 +98,6 @@
 			children = (
 				2365D68627A5521400B95FEE /* Screens */,
 				9F088AEB27B6A477003F6655 /* Cells */,
-				9FB93ECE27B6BA700080008A /* Extensions */,
 				9FB93ECF27B6BA770080008A /* Managers */,
 				9FB93ED027B6BA7E0080008A /* Database */,
 				2365D67E27A551A900B95FEE /* Resources */,
@@ -165,13 +164,6 @@
 				9F088AED27B6A477003F6655 /* TaskCell.xib */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		9FB93ECE27B6BA700080008A /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9FB93ECF27B6BA770080008A /* Managers */ = {
